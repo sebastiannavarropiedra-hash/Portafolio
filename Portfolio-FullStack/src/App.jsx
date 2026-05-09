@@ -1,4 +1,3 @@
-
 import './Styles/App.css'
 import Home from './Pages/Home.jsx'
 import Aboutme from './Pages/Aboutme.jsx'
@@ -6,16 +5,17 @@ import Projects from './Pages/Projects.jsx'
 import Contact from './Pages/Contact.jsx'
 import NotFound from './Pages/NotFound.jsx'
 import Navbar from './Components/Navbar.jsx'
+import Footer from './Components/Footer.jsx'
+
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-
       <BrowserRouter>
 
-<Navbar />
+        <Navbar />
 
         <nav>
           <Link to="/">Home</Link>
@@ -32,8 +32,9 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
 
-      </BrowserRouter>
+        <Footer />
 
+      </BrowserRouter>
     </>
   );
 }

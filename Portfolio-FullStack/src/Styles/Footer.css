@@ -1,0 +1,32 @@
+
+.seccionfooter {
+    background-color: rgb(29, 29, 29);
+    margin-top: 0%;
+}
+
+/* Estilos para los párrafos en el footer */
+.seccionfooter p {
+    color: #ffffff;
+    margin: 1px;
+    text-align: center;
+}
+
+/* Estilos de la línea en el footer */
+.linea-footer {
+    border-top: 1px solid #ffffff;
+    margin-top: 20px;
+}
+
+/* Estilos para las redes sociales */
+.redes-sociales {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilos para los iconos */
+.icono {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #ffffff;
+}
