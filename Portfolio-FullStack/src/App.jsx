@@ -4,31 +4,38 @@ import Home from './Pages/Home.jsx'
 import Aboutme from './Pages/Aboutme.jsx'
 import Projects from './Pages/Projects.jsx'
 import Contact from './Pages/Contact.jsx'
-import NotFound from './Pages/404.jsx'
+import NotFound from './Pages/NotFound.jsx'
 import Navbar from './Components/Navbar.jsx'
-import { BrowserRouter,Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-    
-<BrowserRouter> 
+
+      <BrowserRouter>
 
 <Navbar />
 
-  <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Aboutme />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/contact">Contact</Link>
+        </nav>
 
-</BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<Aboutme />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+
+      </BrowserRouter>
 
     </>
-  )
+  );
 }
 
-export default App
+export default App;
