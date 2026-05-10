@@ -1,5 +1,7 @@
 import React from "react";
 import '../Styles/Footer.css';
+
+
 function Footer() {
   return (
     <>
@@ -18,7 +20,7 @@ function Footer() {
             </a>
 
             <a href="#" className="icono">
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-linkedin"></i>
             </a>
           </div>
 

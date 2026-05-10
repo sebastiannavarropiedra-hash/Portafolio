@@ -6,9 +6,18 @@ import Footer from '../Components/Footer';
 function NotFound() {
     return (
         <>
-            <Navbar active="NotFound" />
+            <div className='NotFoundContainer'>
 
-            <Footer />
+                <Navbar active="NotFound" />
+
+                <div className="NotFoundContent">
+                    <h1>404</h1>
+                    <p>Página no encontrada</p>
+                </div>
+
+                <Footer />
+
+            </div>
         </>
     );
 }
