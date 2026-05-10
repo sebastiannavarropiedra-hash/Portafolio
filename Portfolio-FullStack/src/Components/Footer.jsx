@@ -1,5 +1,6 @@
 import React from "react";
 import '../Styles/Footer.css';
+import { NavLink } from "react-router-dom";
 
 
 function Footer() {
@@ -11,17 +12,17 @@ function Footer() {
 
           {/* Social Media Icons */}
           <div className="redes-sociales mb-3">
-            <a href="#" className="icono">
+            <NavLink to="/" className="icono">
               <i className="fab fa-facebook"></i>
-            </a>
+            </NavLink>
 
-            <a href="#" className="icono">
+            <NavLink to="/" className="icono">
               <i className="fab fa-instagram"></i>
-            </a>
+            </NavLink>
 
-            <a href="#" className="icono">
+            <NavLink to="/" className="icono">
               <i className="fab fa-linkedin"></i>
-            </a>
+            </NavLink>
           </div>
 
           {/* Horizontal Line */}

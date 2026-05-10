@@ -1,13 +1,8 @@
-html,
-body,
-#root {
-    height: 100%;
-    margin: 0;
-}
-.HomeContainer {
-    min-height: 100vh;
+.HomeContainer{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .HomeContent{
     flex: 1;

@@ -1,0 +1,12 @@
+
+
+.AboutmeContainer {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.AboutmeContent {
+    flex: 1;
+}
