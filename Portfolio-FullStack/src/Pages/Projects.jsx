@@ -1,12 +1,16 @@
 import React from 'react';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
+
 
 function Projects() {
-  return (
-    <div className="page-content">
-      <h1>Projects</h1>
-      <p>Aquí van mis proyectos.</p>
-    </div>
-  );
+    return (
+        <>
+            <Navbar active="Projects" />
+
+            <Footer />
+        </>
+    );
 }
 
 export default Projects;

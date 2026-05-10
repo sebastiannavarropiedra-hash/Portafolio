@@ -1,12 +1,17 @@
 import React from 'react';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
+
 
 function Contact() {
-  return (
-    <div className="page-content">
-      <h1>Contact</h1>
-      <p>Contáctame aquí.</p>
-    </div>
-  );
+    return (
+        <>
+            <Navbar active="Contact" />
+
+            <Footer />
+
+        </>
+    );
 }
 
 export default Contact;

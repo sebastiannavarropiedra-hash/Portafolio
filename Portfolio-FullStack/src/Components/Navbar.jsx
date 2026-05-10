@@ -1,98 +1,62 @@
 import React from "react";
 import '../Styles/Navbar.css'
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
-function Navbar() {
 
-	return (
+const Navbar = (props) => {
+    const { active } = props;
 
-		<nav className="navbar navbar-expand-lg bg-body-tertiary">
+    return (
+        <React.Fragment>
+            <div className="nav-container">
+                <nav className="navbar">
+                    <div className="nav-background">
+                        <ul className="nav-list">
+                            <li
+                                className={
+                                    active === "Home"
+                                        ? "nav-item active"
+                                        : "nav-item"
+                                }
+                            >
+                                <Link to="/">Home</Link>
+                            </li>
+                            <li
+                                className={
+                                    active === "Aboutme"
+                                        ? "nav-item active"
+                                        : "nav-item"
+                                }
+                            >
+                                <Link to="/Aboutme">About me</Link>
+                            </li>
+                            <li
+                                className={
+                                    active === "Projects"
+                                        ? "nav-item active"
+                                        : "nav-item"
+                                }
+                            >
+                                <Link to="/Projects">Projects</Link>
+                            </li>
 
-			<div className="container-fluid">
-
-				<NavLink
-					className="navbar-brand"
-					to="/"
-				>
-					My Portfolio
-				</NavLink>
-
-				<button
-					className="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-
-					<span className="navbar-toggler-icon"></span>
-
-				</button>
-
-				<div
-					className="collapse navbar-collapse"
-					id="navbarNav"
-				>
-
-					<ul className="navbar-nav">
-
-						<li className="nav-item">
-
-							<NavLink
-								className="nav-link"
-								to="/"
-							>
-								Home
-							</NavLink>
-
-						</li>
-
-						<li className="nav-item">
-
-							<NavLink
-								className="nav-link"
-								to="/about"
-							>
-								About Me
-							</NavLink>
-
-						</li>
-
-						<li className="nav-item">
-
-							<NavLink
-								className="nav-link"
-								to="/projects"
-							>
-								Projects
-							</NavLink>
-
-						</li>
-
-						<li className="nav-item">
-
-							<NavLink
-								className="nav-link"
-								to="/contact"
-							>
-								Contact
-							</NavLink>
-
-						</li>
-
-					</ul>
-
-				</div>
-
-			</div>
-
-		</nav>
-
-	);
-
-}
+                            <li
+                                className={
+                                    active === "Contact"
+                                        ? "nav-item active"
+                                        : "nav-item"
+                                }
+                            >
+                                <Link to="/contact">Contact</Link>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </React.Fragment>
+    );
+};
 
 export default Navbar;

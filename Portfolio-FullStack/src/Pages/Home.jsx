@@ -1,12 +1,16 @@
 import React from 'react';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 function Home() {
-  return (
-    <div className="page-content">
-      <h1>Home</h1>
-      <p>Bienvenido a mi portafolio.</p>
-    </div>
-  );
+    return (
+
+        <>
+            <Navbar active="Home" />
+
+            <Footer />
+        </>
+    );
 }
 
 export default Home;

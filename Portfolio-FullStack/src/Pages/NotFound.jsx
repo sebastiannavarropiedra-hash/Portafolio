@@ -1,12 +1,16 @@
 import React from 'react';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
+
 
 function NotFound() {
-  return (
-    <div className="page-content">
-      <h1>404</h1>
-      <p>Página no encontrada.</p>
-    </div>
-  );
+    return (
+        <>
+            <Navbar active="NotFound" />
+
+            <Footer />
+        </>
+    );
 }
 
 export default NotFound;
