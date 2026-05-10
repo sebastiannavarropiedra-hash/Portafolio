@@ -6,9 +6,17 @@ import Footer from '../Components/Footer';
 function Contact() {
     return (
         <>
-            <Navbar active="Contact" />
+            <div className='ContactContainer'>
 
-            <Footer />
+                <Navbar active="Contact" />
+
+                <div className="ContactContent">
+
+                </div>
+
+                <Footer />
+
+            </div>
 
         </>
     );

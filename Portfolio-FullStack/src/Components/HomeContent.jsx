@@ -1,7 +1,6 @@
 import React from "react";
 import  INFO  from "../Data/user";
 import "../Styles/HomeContent.css";
-import yo from "../Assets/YO.jpg";
 
 function HomeContent() {
     return (

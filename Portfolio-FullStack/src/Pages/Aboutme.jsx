@@ -5,8 +5,17 @@ import Footer from '../Components/Footer';
 function Aboutme() {
     return (
         <>
-            <Navbar active="Aboutme" />
-            <Footer />
+            <div className='AboutmeContainer'>
+
+                <Navbar active="Aboutme" />
+
+                <div className="AboutmeContent">
+
+                </div>
+
+                <Footer />
+
+            </div>
         </>
     );
 }

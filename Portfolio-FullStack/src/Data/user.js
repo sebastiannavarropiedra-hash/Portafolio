@@ -1,9 +1,11 @@
+import yoimage from '../Assets/YO.jpg'
+
 const INFO = {
 	main: {
 		title: "FullStackFolio",
 		name: "Sebastian Navarro",
 		email: "snpnavarro@outlook",
-		logo: "../Assets/YO.jpg",
+		logo: yoimage,
 	},
 
 	socials: {

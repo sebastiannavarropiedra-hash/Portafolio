@@ -6,9 +6,17 @@ import Footer from '../Components/Footer';
 function Projects() {
     return (
         <>
-            <Navbar active="Projects" />
+            <div className='ProjectsContainer'>
 
-            <Footer />
+                <Navbar active="Projects" />
+
+                <div className="ProjectsContent">
+
+                </div>
+
+                <Footer />
+
+            </div>  
         </>
     );
 }
