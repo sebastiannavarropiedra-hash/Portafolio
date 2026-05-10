@@ -1,7 +1,8 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
-
+import NotFoundContent from '../Components/NotFoundContent';
+import '../Styles/NotFound.css';
 
 function NotFound() {
     return (
@@ -11,8 +12,7 @@ function NotFound() {
                 <Navbar active="NotFound" />
 
                 <div className="NotFoundContent">
-                    <h1>404</h1>
-                    <p>Página no encontrada</p>
+                    <NotFoundContent />
                 </div>
 
                 <Footer />
