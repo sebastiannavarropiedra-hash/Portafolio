@@ -1,8 +1,12 @@
 import React from "react";
+import  INFO  from "../Data/user";
+import "../Styles/HomeContent.css";
+import yo from "../Assets/YO.jpg";
 
 function HomeContent() {
     return (
-        <div className="home-content">
+        <>
+        <div className="home-container">
             <div className="homepage-first-area">
                 <div className="homepage-first-area-left-side">
                     <div className="title homepage-title">
@@ -18,8 +22,8 @@ function HomeContent() {
                     <div className="homepage-image-container">
                         <div className="homepage-image-wrapper">
                             <img
-                                src="homepage.jpg"
-                                alt="about"
+                                src={INFO.main.logo}
+                                alt="image not found"
                                 className="homepage-image"
                             />
                         </div>
@@ -27,6 +31,7 @@ function HomeContent() {
                 </div>
             </div>
         </div>
+        </>
     );
 }
 

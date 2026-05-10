@@ -4,8 +4,7 @@ import Aboutme from './Pages/Aboutme.jsx'
 import Projects from './Pages/Projects.jsx'
 import Contact from './Pages/Contact.jsx'
 import NotFound from './Pages/NotFound.jsx'
-import Navbar from './Components/Navbar.jsx'
-import Footer from './Components/Footer.jsx'
+
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
