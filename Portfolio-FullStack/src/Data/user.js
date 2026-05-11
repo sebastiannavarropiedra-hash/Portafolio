@@ -9,11 +9,10 @@ const INFO = {
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
 		github: "https://github.com/",
 		linkedin: "https://linkedin.com/",
 		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
+
 		facebook: "https://facebook.com/",
 	},
 
@@ -24,16 +23,77 @@ const INFO = {
 	},
 
 	about: {
-		title: "I’m Sebastian I live in Costa Rica where I seek to improve my skills and grow as a developer.",
+		title: "About Me",
+		Subtitle:"I’m Sebastian I live in Costa Rica where I seek to improve my skills and grow as a developer.",
 		description:
-			"Motivated and detail-oriented aspiring Web Developer with strong technical aptitude, proven problem-solving skills, and experience in customer-facing tech support roles. Background includes technical troubleshooting, platform assistance, and proficiency in core productivity tools — paired with a strong work ethic, proactivity, and ability to learn fast. Eager to apply logical thinking, technical knowledge, and user-focused mindset to build clean, functional, and responsive web solutions that are secure, scalable, and reliable in professional environments.",
+			"Technical support & advanced troubleshooting Operating Systems: Windows, macOS Platforms & Tools: Salesforce, Zendesk, ServiceNow Web Development: HTML, CSS, JavaScript, Responsive Design, Front-end & Back-end basics Data & Productivity: Advanced Microsoft Excel (VLOOKUP, IF, SUMIFS) Other: Industrial refrigeration systems maintenance and repair, customer service, team leadership, workflow optimization.",
+		selfie: yoimage,
 	},
 
-	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-	},
+
+	experience: [
+		{
+			Job:"Job1",
+			title: "-Customer Service Specialist & SME",
+			company: "MOVATE",
+			duration: "August 2024 – Present",
+
+			skills:
+				"Operational support, ticket management, customer service, SLA compliance, team training, coaching, communication, problem-solving, coordination between departments, phone/chat/email support.",
+
+			description:
+				" Operational support, SLA management, customer service, team training, coaching and ticket coordination."
+		},
+
+		{
+			Job:"Job2",
+			title: "-Technical Support & Quality Coach",
+			company: "CONCENTRIX CR",
+			duration: "May 2023 – August 2024",
+
+			skills:
+				"Technical support, iOS, macOS, troubleshooting, networking, customer support, coaching, QA monitoring, chat support, performance improvement.",
+
+			description:
+				" iOS, macOS troubleshooting, networking, customer support,  QA coaching and chat support."
+		},
+
+		{
+			Job:"Job3",
+			title: "-Production Team Lead",
+			company: "PIZZA HUT",
+			duration: "2022 – 2023",
+
+			skills:
+				"Leadership, operations management, workflow optimization, team management, productivity improvement, process organization.",
+
+			description:
+				"Team leadership, workflow optimization and production management."
+		}
+	],
+
+	education: [
+		{
+			degree: "-Bachelor in Computer Engineering",
+			institution: "Universidad Hispanoamericana",
+			duration: "Jan 2021 – Present",
+		},
+		{
+			degree: "-Certification in Full Stack Web Development",
+			institution: "Ucreativa",
+			duration: "Apr 2023 – In progress",
+		},
+		{
+			degree: "-English Program",
+			institution: "UNED",
+			duration: "Jan 2021 – Completed",
+		},
+		{
+			degree: "-Advanced Microsoft Excel skills",
+			institution: "VLOOKUP, IF, SUMIFS",
+			duration: "",
+		},
+	],
 
 	projects: [
 		{
@@ -45,8 +105,9 @@ const INFO = {
 			link: "https://github.com",
 		},
 
-		
+
 	],
 };
+
 
 export default INFO;

@@ -1,9 +1,11 @@
-.HomeContainer{
+.HomeContainer {
+    min-height: 100vh;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: aliceblue;
 }
-.HomeContent{
+
+.HomeContent {
     flex: 1;
 }
